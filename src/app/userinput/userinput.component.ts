@@ -31,7 +31,7 @@ export class UserinputComponent {
   @ViewChild('box6', { static: false })
   box6!: ElementRef;
 
-
+  winner: boolean = false
   
   secretChArr: any [] = []
 
@@ -92,8 +92,14 @@ export class UserinputComponent {
     var tempDiv = document.getElementById("hiddenBox2")
     var showHide = document.getElementById("show-hide1")
     var input2 = document.getElementById("show-hide2")
+    var grid = document.getElementById("grid")
 
-    if (this.valueArr[0] != null && tempDiv != null && showHide != null){
+    if (this.winner == true && showHide != null && tempDiv != null && grid != null){
+      showHide.style.display = "none"
+      grid.style.right = "15px"
+    }
+
+    else if (this.valueArr[0] != null && tempDiv != null && showHide != null){
       tempDiv.style.display = "block"
       showHide.style.display = "none"
       if (input2 != null)
@@ -116,7 +122,12 @@ export class UserinputComponent {
 
   checkWord1(value: string){
     if(value.toUpperCase() == this.secretWord){
-      alert("congratulations! you got it!")
+      this.winner = true
+      this.checkEntry1(value)
+      setTimeout(function() {
+        alert("congratulations! you got it!")
+    }, 0);
+      
       //criar funcao p/ trocar tudo pra verde direto e sumir com a box atual, sem abrir a próxima
     }
     else if(value.toUpperCase() != this.secretWord && (wordlist.includes(value.toUpperCase()))){
