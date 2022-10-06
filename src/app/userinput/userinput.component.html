@@ -1,0 +1,108 @@
+<!-- <p style="color: white">userinput:</p> -->
+<div style="position: relative;">
+    <div style="z-index: -10;  position: absolute; margin-top: 12px;">
+        <img src="assets/img/grid.png">
+    </div>
+    <span>
+    <input class=inputBox onkeydown="return /[a-z]/i.test(event.key)" id=show-hide1 #box1 (keyup.enter)="checkWord1(box1.value)" maxlength="5" style="text-transform:uppercase;" autocomplete="off" (blur)="onBlur1($event)" autofocus>
+    </span>
+
+    <div style="display: flex; justify-content: center;">
+        <span id="b1ch1" style="color: white;">{{this.charArr1[0]}}</span>
+        <span id="b1ch2" style="color: white;">{{this.charArr1[1]}}</span>
+        <span id="b1ch3" style="color: white;">{{this.charArr1[2]}}</span>
+        <span id="b1ch4" style="color: white;">{{this.charArr1[3]}}</span>
+        <span id="b1ch5" style="color: white;">{{this.charArr1[4]}}</span>
+    </div>
+    
+
+    <div id=hiddenBox2 style="display:none">
+
+        <span>
+            <input class=inputBox onkeydown="return /[a-z]/i.test(event.key)" id=show-hide2 #box2 (keyup.enter)="checkWord2(box2.value)" maxlength="5" style="text-transform:uppercase;" autocomplete="off" (blur)="onBlur2($event)">
+        </span>
+        
+        <div style="display: flex; justify-content: center;">
+            <span id="b2ch1" style="color: white;">{{this.charArr2[0]}}</span>
+            <span id="b2ch2" style="color: white;">{{this.charArr2[1]}}</span>
+            <span id="b2ch3" style="color: white;">{{this.charArr2[2]}}</span>
+            <span id="b2ch4" style="color: white;">{{this.charArr2[3]}}</span>
+            <span id="b2ch5" style="color: white;">{{this.charArr2[4]}}</span>
+        </div>
+
+    </div>
+
+
+    <div id=hiddenBox3 style="display:none">
+
+        <span>
+            <input class=inputBox onkeydown="return /[a-z]/i.test(event.key)" id=show-hide3 #box3 (keyup.enter)="checkWord3(box3.value)" maxlength="5" style="text-transform:uppercase;" autocomplete="off" (blur)="onBlur3($event)">
+        </span>
+        
+        <div style="display: flex; justify-content: center;">
+            <span id="b3ch1" style="color: white;">{{this.charArr3[0]}}</span>
+            <span id="b3ch2" style="color: white;">{{this.charArr3[1]}}</span>
+            <span id="b3ch3" style="color: white;">{{this.charArr3[2]}}</span>
+            <span id="b3ch4" style="color: white;">{{this.charArr3[3]}}</span>
+            <span id="b3ch5" style="color: white;">{{this.charArr3[4]}}</span>
+        </div>
+
+    </div>
+
+
+    <div id=hiddenBox4 style="display:none">
+
+        <span>
+            <input class=inputBox onkeydown="return /[a-z]/i.test(event.key)" id=show-hide4 #box4 (keyup.enter)="checkWord4(box4.value)" maxlength="5" style="text-transform:uppercase;" autocomplete="off" (blur)="onBlur4($event)">
+        </span>
+        
+        <div style="display: flex; justify-content: center;">
+            <span id="b4ch1" style="color: white;">{{this.charArr4[0]}}</span>
+            <span id="b4ch2" style="color: white;">{{this.charArr4[1]}}</span>
+            <span id="b4ch3" style="color: white;">{{this.charArr4[2]}}</span>
+            <span id="b4ch4" style="color: white;">{{this.charArr4[3]}}</span>
+            <span id="b4ch5" style="color: white;">{{this.charArr4[4]}}</span>
+        </div>
+
+    </div>
+
+
+    <div id=hiddenBox5 style="display:none">
+
+        <span>
+            <input class=inputBox onkeydown="return /[a-z]/i.test(event.key)" id=show-hide5 #box5 (keyup.enter)="checkWord5(box5.value)" maxlength="5" style="text-transform:uppercase;" autocomplete="off" (blur)="onBlur5($event)">
+        </span>
+        
+        <div style="display: flex; justify-content: center;">
+            <span id="b5ch1" style="color: white;">{{this.charArr5[0]}}</span>
+            <span id="b5ch2" style="color: white;">{{this.charArr5[1]}}</span>
+            <span id="b5ch3" style="color: white;">{{this.charArr5[2]}}</span>
+            <span id="b5ch4" style="color: white;">{{this.charArr5[3]}}</span>
+            <span id="b5ch5" style="color: white;">{{this.charArr5[4]}}</span>
+        </div>
+
+    </div>
+
+
+    <div id=hiddenBox6 style="display:none">
+
+        <span>
+            <input class=inputBox onkeydown="return /[a-z]/i.test(event.key)" id=show-hide6 #box6 (keyup.enter)="checkWord6(box6.value)" maxlength="5" style="text-transform:uppercase;" autocomplete="off" (blur)="onBlur6($event)">
+        </span>
+        
+        <div style="display: flex; justify-content: center;">
+            <span id="b6ch1" style="color: white;">{{this.charArr6[0]}}</span>
+            <span id="b6ch2" style="color: white;">{{this.charArr6[1]}}</span>
+            <span id="b6ch3" style="color: white;">{{this.charArr6[2]}}</span>
+            <span id="b6ch4" style="color: white;">{{this.charArr6[3]}}</span>
+            <span id="b6ch5" style="color: white;">{{this.charArr6[4]}}</span>
+        </div>
+
+        <div class=inputBox>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- <p style="color: white">{{charArr}}</p>    -->
